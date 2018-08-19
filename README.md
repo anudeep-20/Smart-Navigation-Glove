@@ -1,3 +1,5 @@
+Smart Navigation Gloves
+
 Due to the increasing urbanization, new routes are being created every day and remembering
 each route is a tiresome job. In order to make this task easier maps have been created but most of the
 riders feel inconvenient to constantly pick their phone up and check for the route. Frequent navigation
