@@ -1,0 +1,5 @@
+1.) Connect all the Components as shown in Circuit_Diagram.png, Connections.txt
+2.) For coding Attiny85 using Arduino, Refer to Coding_Connections.txt
+3.) Burn the respective Arduino Codes to respective breadboard Circuitry.
+4.) Install Navigation Glove.apk to your mobile.
+5.) For knowing the usage of Android App. Go to: https://www.youtube.com/watch?v=OlccFptsWcQ

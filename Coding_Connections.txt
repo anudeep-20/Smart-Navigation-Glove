@@ -1,0 +1,17 @@
+1.) Go to File > Examples > ArduinoISP and open that example
+2.) Upload that Example into your Arduino Uno
+3.) Go to Tools > Programmer and select "Arduino as ISP"
+4.) Go to Tools > Boards :: Set Attiny85 @ 8MHz(Internal oscillator; BOD disabled)
+5.) Now make the following Connections
+
+	Arduino Uno ---> ATtiny85
+
+	Vcc -> Pin 8 (5V Pin)
+	Gnd -> Pin 4 (Gnd Pin)
+	Digital Pin 10 -> Pin 1 (Reset Pin)
+	Digital Pin 11 -> Pin 5 (Digital Pin 0 / PWM)
+	Digital Pin 12 -> Pin 6 (Digital Pin 1 / PWM)
+	Digital Pin 13 -> Pin 7 (Digital Pin 2 / A1)
+
+6.) Go to Tools and click "Burn Bootloader"
+7.) Now At-tiny85 is ready for programming and you can upload your code...
