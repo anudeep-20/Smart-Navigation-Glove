@@ -28,7 +28,7 @@ void loop() {
     isSerial = true;
   } else {
     mySerial_1.print(input);
-    if (isSerial) { //Stop serial_1 and start serial_2 for comunicating with Left glove.
+    if (isSerial) { //Stop serial_1 and start serial_2 for communicating with Left glove.
       mySerial_2.begin(9600);
       mySerial_2.print(" " + input);
       mySerial_2.end();
