@@ -35,7 +35,7 @@ void loop() {
       mySerial_1.begin(9600);
       isSerial = false;
     }
-    //The data is availablein the format direction_of_turn,distance_from_turn.
+    //The data is available in the format direction_of_turn,distance_from_turn.
     for (int i = 0; i < input.length(); i++) {
       if (input.substring(i, i + 1) == ",") {
         pieces[counter] = (input.substring(lastIndex, i)).trim();
