@@ -1,0 +1,42 @@
+-----Right Glove-----
+
+	Bluetooth_1: (One connecting left glove)
+		Vcc -> 5V
+		Gnd -> Gnd
+		Rx Pin -> Pin 3 of Attiny85_1
+
+	Bluetooth_2: (Navigation Glove)
+		Vcc -> 5V
+		Gnd -> Gnd
+		Tx Pin -> Pin 6 of Attiny85_1
+
+	Attiny85_1:
+		Pin 2 -> LED V+
+		Pin 3 -> Bluetooth_1 Rx
+		Pin 4 -> Gnd
+		Pin 6 -> Bluetooth_2 Tx
+		Pin 8 -> Vcc
+
+	Power Regulatory: LM7805 MOSFET (Bump facing towards us)
+		Left -> 10uF V+, Battery V+
+		Middle -> 10uF V-, Cermaic 1uF Capacitor V-, Battery V-
+		Right -> 1uF Ceramic V+, Vout
+	
+
+-----Left Glove-----
+
+	Bluetooth_3:
+		Vcc -> 5V
+		Gnd -> Gnd
+		Tx Pin -> Pin 6 of Attiny85_2
+
+	Attiny85_2:
+		Pin 2 -> LED V+
+		Pin 4 -> Gnd
+		Pin 6 -> Bluetooth_3 Tx
+		Pin 8 -> Vcc
+
+	Power Regulatory: LM7805 MOSFET (Bump facing towards us)
+		Left -> 10uF V+, Battery V+
+		Middle -> 10uF V-, Cermaic 1uF Capacitor V-, Battery V-
+		Right -> 1uF Ceramic V+, Vout
